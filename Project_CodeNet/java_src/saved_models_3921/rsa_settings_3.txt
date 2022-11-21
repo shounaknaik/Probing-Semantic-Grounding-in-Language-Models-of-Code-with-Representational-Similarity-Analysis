@@ -1,0 +1,6 @@
+[settings]
+batch_size = 200
+mode=finetuned_format_code
+result_file_name=./rsa_accepted_code.txt
+CodeBERT_folder=./codeBERT_accepted/
+NL_folder=../../BERT_embeddings/

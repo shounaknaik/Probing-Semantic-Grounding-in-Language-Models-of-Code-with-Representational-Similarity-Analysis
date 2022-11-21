@@ -1,0 +1,6 @@
+[settings]
+batch_size = 200
+mode=normal
+result_file_name=./rsa_semantic_normal.txt
+CodeBERT_folder=./codeBERT_semantic/
+NL_folder=../../BERT_embeddings/

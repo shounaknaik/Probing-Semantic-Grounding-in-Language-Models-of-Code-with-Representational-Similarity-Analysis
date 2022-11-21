@@ -1,0 +1,5 @@
+[settings]
+batch_size = 200
+result_file_name=./bert_vs_cls_rightInput.txt
+nl_type=bert
+code_type=codeBERT_cls_updated

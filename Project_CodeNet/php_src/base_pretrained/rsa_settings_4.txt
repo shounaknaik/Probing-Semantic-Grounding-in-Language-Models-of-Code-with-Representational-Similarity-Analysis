@@ -1,0 +1,6 @@
+[settings]
+batch_size = 200
+mode=finetuned_format_average
+result_file_name=./rsa_semantic_average.txt
+CodeBERT_folder=./codeBERT_semantic_finetuned_format/
+NL_folder=../../BERT_embeddings/
