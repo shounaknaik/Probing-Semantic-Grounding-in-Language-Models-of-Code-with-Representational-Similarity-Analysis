@@ -17,13 +17,14 @@ the semantic grounding in CodeBERT significantly
 # RSA
 Given $N$ natural language description - code snippet pairs (NL-PL): we first obtain the code representations $\{C_k\}$ from the code snippets with CodeBERT. Similarly, we obtain the semantic representations $\{S_k\}$ from the natural language descriptions with BERT, where $k \epsilon [1,N]$. For ablation purposes, we extract code representations under two different input settings: Unimodal (PL-only) and Bimodal (NL and PL) as supported by the CodeBERT model. Next, we construct the individual representational geometries ($\mathcal{G} \in \mathbb{R}^{N \times N}$) for $\{C_k\}$ and $\{S_k\}$ by computing the pairwise dissimilarities between all the samples in the dataset:
 
-\[
-\mathcal{G}_{C} = 1 - \text{similarity}(C_i, C_j)
-\]
+$\begin{equation}
+ \mathcal{G}_{C} = \{1-similarity(C_i, C_j)\} 
+\end{equation}$
 
-\[
-\mathcal{G}_{S} = 1 - \text{similarity}(S_i, S_j)
-\]
+$\begin{equation}
+ \mathcal{G}_{S} = \{1-similarity(S_i, S_j)\} 
+\end{equation}$
+
 where, $i,j \epsilon [1,N]$
 
 <p align = "center">
