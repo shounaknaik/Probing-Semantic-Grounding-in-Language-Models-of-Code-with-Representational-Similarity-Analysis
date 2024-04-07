@@ -28,7 +28,7 @@ Given $N$ natural language description - code snippet pairs (NL-PL): we first ob
 where, $i,j \epsilon [1,N]$
 
 <p align = "center">
-<img src = "images/rsa.pdf" width = 400, height = 400> 
+<img src = "images/rsa.png" width = 400, height = 400> 
 </p>  
 
 We say that higher the score, higher the semantic grounding. 
@@ -36,7 +36,7 @@ We say that higher the score, higher the semantic grounding.
 # Localization of Semantic grounding
 
 <p align = "center">
-<img src = "images/heatmap_rsa_all.png" width = 400, height = 400> 
+<img src = "images/heatmap_rsa_all.png" width = 600, height = 400> 
 </p>  
 
 Finetuning here meant further training the network on select examples. More details in the Dataset section of paper.
@@ -45,7 +45,7 @@ Finetuning here meant further training the network on select examples. More deta
 We show that Natural language input plays a key part in boosting the semantic grounding.   
 Thus we suggest to add a small docstring to your code for better downstream performance.
 <p align = "center">
-<img src = "images/average_vs_code_percent.png" width = 400, height = 400> 
+<img src = "images/average_vs_code_percent.png" width = 600, height = 400> 
 </p>  
 
 # Correct vs Incorrect 
@@ -53,5 +53,5 @@ Thus we suggest to add a small docstring to your code for better downstream perf
 We see that CodeBERT can detect difference between correct and incorrect code. But we also see that finetuning, increases semantic grounding for incorrect examples as well. We think that this suggests that the meaning of the code is not the primary objective of the finetuning, but its the form of the code. For details see Figure 9 in the paper. 
 
 <p align = "center">
-<img src = "images/code_difference_specific_all.png" width = 400, height = 400> 
+<img src = "images/code_difference_specific_all.png" width = 600, height = 400> 
 </p>  
